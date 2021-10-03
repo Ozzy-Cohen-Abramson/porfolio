@@ -14,7 +14,7 @@ export default function Home() {
               <p>Hello</p>
               <h2>I'm Ozzy</h2>
               <h1>Fullstack developer</h1>
-              <a href="#" className="btn-1 outer-shadow hover-in-shadow">
+              <a href="#about" className="btn-1 outer-shadow hover-in-shadow">
                 More About Me
               </a>
             </div>

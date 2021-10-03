@@ -1,5 +1,5 @@
 .about-section {
-  padding: 80px 0 0;
+  padding: 40px 0 0;
   min-height: 100vh;
 }
 
@@ -28,10 +28,10 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  font-size: 16px;
+  font-size: 22px;
   text-align: center;
   color: var(--text-black-600);
-  margin: 4px;
+  margin: 4px 10px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -39,8 +39,15 @@
 .about-section .about-img .social-links a i {
   line-height: 40px;
 }
-.about-section .about-img .social-links a:hover {
-  color: var(--skin-color);
+
+.about-section .about-img .social-links .linked:hover {
+  color: #2867b2;
+}
+.about-section .about-img .social-links .facebook:hover {
+  color: #4267b2;
+}
+.about-section .about-img .social-links .github:hover {
+  color: #6cc644;
 }
 
 .about-section .about-img .social-links a:after {

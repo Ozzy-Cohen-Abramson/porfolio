@@ -65,7 +65,7 @@ export default function WebItem() {
                       <h3>Project info</h3>
                       <ul>
                         <li>
-                          Date - <span>2020</span>
+                          Date - <span>2019</span>
                         </li>
                         <li>
                           Client - <span>ITC</span>
@@ -76,7 +76,10 @@ export default function WebItem() {
                         <li>
                           Web -
                           <span>
-                            <a href="#">www.google.com</a>
+                            <a href="https://www.google.com/" target="_blank">
+                              {" "}
+                              www.google.com
+                            </a>
                           </span>
                         </li>
                       </ul>

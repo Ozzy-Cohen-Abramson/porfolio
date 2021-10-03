@@ -4,7 +4,7 @@ import "./services.css";
 
 export default function Services() {
   return (
-    <div className="service-section">
+    <div className="service-section" id="services">
       <div className="container">
         <div className="row">
           <div className="section-title">

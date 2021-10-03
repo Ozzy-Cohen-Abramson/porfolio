@@ -38,7 +38,7 @@ export default function About() {
   };
 
   return (
-    <section className="about-section section">
+    <section className="about-section section" id="about">
       <div className="container">
         <div className="row">
           <div className="section-title">
@@ -58,23 +58,23 @@ export default function About() {
               <a
                 href="https://www.facebook.com/dinebag.oz/"
                 target="_blank"
-                className="outer-shadow hover-in-shadow"
+                className="outer-shadow hover-in-shadow facebook"
               >
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/ozzy-cohen-abramson-232304209/"
-                target="_blank"
-                className="outer-shadow hover-in-shadow"
-              >
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a
                 href="https://github.com/Ozzy-Cohen-Abramson"
                 target="_blank"
-                className="outer-shadow hover-in-shadow"
+                className="outer-shadow hover-in-shadow github"
               >
                 <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ozzy-cohen-abramson-232304209/"
+                target="_blank"
+                className="outer-shadow hover-in-shadow linked"
+              >
+                <i className="fab fa-linkedin-in "></i>
               </a>
             </div>
           </div>
