@@ -21,7 +21,6 @@ export default function About() {
       !e.target.classList.contains("active")
     ) {
       const target = e.target.getAttribute("data-target");
-      console.log(target);
       if (target === ".experience") {
         setExperience(true);
         setSkills(false);
@@ -35,7 +34,6 @@ export default function About() {
         setSkills(true);
         setEducation(false);
       }
-      e.target.classList.add("outer-shadow", "active");
     }
   };
 

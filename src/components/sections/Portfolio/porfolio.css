@@ -35,47 +35,6 @@
 .porfolio-section .filter-item.active {
   color: var(--skin-color);
 }
-
-.porfolio-section .portfolio-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.porfolio-section .portfolio-item-inner {
-  padding: 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.porfolio-section .portfolio-item-img img {
-  border-radius: 5px;
-  width: 100%;
-}
-.porfolio-section .portfolio-item-img {
-  position: relative;
-}
-.porfolio-section .portfolio-item-img .view-project {
-  text-transform: capitalize;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--skin-color);
-  transition: all 0.3s ease;
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-}
-
-.porfolio-section .portfolio-item-details {
-  display: none;
-}
-
-.porfolio-section .portfolio-item-inner p {
-  font-size: 16px;
-  margin: 10px 0 0;
-  color: var(--text-black-600);
-  text-transform: capitalize;
+.porfolio-item.active {
+  animation: fadeInTop 0.8s ease;
 }
