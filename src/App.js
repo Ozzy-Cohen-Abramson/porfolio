@@ -7,6 +7,7 @@ import Home from "./components/sections/Home/Home";
 import About from "./components/sections/About/About";
 import Services from "./components/sections/Services/Services";
 import Portfolio from "./components/sections/Portfolio/Portfolio";
+import Contact from "./components/sections/Contact/Contact";
 import ScrollArrow from "./components/ScrollArrow/ScrollArrow";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Services />
       <Portfolio />
+      <Contact />
       <ScrollArrow />
     </div>
   );

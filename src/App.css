@@ -119,6 +119,7 @@ img {
   border-radius: 30px;
   transition: all 0.3s ease;
   display: inline-block;
+  border: none;
 }
 
 .btn-1::after {

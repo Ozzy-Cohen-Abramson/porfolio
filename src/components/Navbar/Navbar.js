@@ -53,7 +53,7 @@ export default function Navbar(props) {
               portfolio
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="#"
               className="outer-shadow hover-in-shadow"
@@ -61,10 +61,10 @@ export default function Navbar(props) {
             >
               testimonial
             </a>
-          </li>
+          </li> */}
           <li>
             <a
-              href="#"
+              href="#contact"
               className="outer-shadow hover-in-shadow"
               onClick={closeNav}
             >
