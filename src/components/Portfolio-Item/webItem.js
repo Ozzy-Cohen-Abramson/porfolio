@@ -39,8 +39,8 @@ export default function WebItem() {
       </div>
       {details && (
         <div className="pp portfolio-popup ">
-          <div className="pp-details">
-            {innerDetails && (
+          {innerDetails && (
+            <div className="pp-details">
               <div className="pp-details-inner active">
                 <div className="pp-title">
                   <h2>Personal portfolio</h2>
@@ -87,8 +87,8 @@ export default function WebItem() {
                   </div>
                 </div>
               </div>
-            )}
-          </div>
+            </div>
+          )}
 
           <div className="seperator"></div>
           <div className="pp-main active">

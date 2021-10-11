@@ -8,7 +8,7 @@ import GameItem from "../../Portfolio-Item/gameItem";
 import "./porfolio.css";
 
 export default function Portfolio() {
-  const [webApp, setWebApp] = useState(false);
+  const [webApp, setWebApp] = useState(true);
   const [fs, setFS] = useState(false);
   const [mobileApp, setMobileApp] = useState(false);
   const [games, setGames] = useState(false);

@@ -7,7 +7,7 @@ export default function Services() {
     <div className="service-section" id="services">
       <div className="container">
         <div className="row">
-          <div className="section-title">
+          <div className="section-title ">
             <h2 data-heading="Services">What I do</h2>
           </div>
         </div>

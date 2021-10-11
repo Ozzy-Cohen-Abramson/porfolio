@@ -1,0 +1,43 @@
+.menu {
+  position: fixed;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.menu .dot {
+  display: block;
+  border: 8px solid var(--skin-color);
+  background: var(--skin-color);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  color: var(--text-black-600);
+  text-decoration: underline;
+}
+.menu .dot,
+.menu .dot:hover,
+.menu .dot span {
+  transition: all 200ms ease;
+}
+.menu .dot:hover,
+.menu .dot.active {
+  background: transparent;
+  transform: scale(1.2);
+}
+.menu .dot:hover span,
+.menu .dot.active span {
+  opacity: 1;
+}
+.menu .dot:hover span.forty,
+.menu .dot.active span.forty {
+  transform: translate(-60px, -8px);
+}
+
+.menu .dot span {
+  font-size: 12px;
+  display: block;
+  transform: translate(0, -3px);
+  opacity: 0;
+}
