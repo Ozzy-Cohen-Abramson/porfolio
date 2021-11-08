@@ -10,12 +10,13 @@ import Portfolio from "./components/sections/Portfolio/Portfolio";
 import Contact from "./components/sections/Contact/Contact";
 import ScrollArrow from "./components/ScrollArrow/ScrollArrow";
 import DotNav from "./components/DonNav/DotNav";
+import StyleSwitch from "./components/styleSwitch/StyleSwitch";
 
 function App() {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="App">
+    <div className='App'>
       <DotNav />
       <Header setNav={setNav} />
       {nav && <Navbar setNav={setNav} />}
@@ -25,6 +26,7 @@ function App() {
       <Portfolio />
       <Contact />
       <ScrollArrow />
+      <StyleSwitch />
     </div>
   );
 }

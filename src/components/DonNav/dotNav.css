@@ -41,3 +41,9 @@
   transform: translate(0, -3px);
   opacity: 0;
 }
+
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+}
