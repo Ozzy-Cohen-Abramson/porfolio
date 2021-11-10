@@ -1,16 +1,9 @@
 .intro-container {
   width: 100vw;
   height: 100vh;
+  background: #000;
   background-image: url("../../img/star-wars-backgrounds-25.jpg");
-  /* background: #000; */
   overflow: hidden;
-}
-
-.youtube {
-  position: absolute;
-  z-index: 2;
-  top: 40%;
-  left: 50%;
 }
 
 .start {
@@ -19,19 +12,54 @@
   left: 35vw;
   width: 30%;
   padding: 10px;
-  font-size: 24px;
+  color: #feda4a;
+  background-color: transparent;
+  font-size: 36px;
+  letter-spacing: 6px;
+  line-height: 50px;
   cursor: pointer;
   z-index: 2;
+  border: none;
+}
+
+.start:hover {
+  animation: hoverButton infinite 1s;
+}
+
+@keyframes hoverButton {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.start > span {
+  color: rgb(75, 213, 238);
 }
 
 .stop {
   position: absolute;
   right: 4vw;
   bottom: 5vh;
-  font-size: 24px;
   padding: 10px;
+  color: #feda4a;
+  background-color: transparent;
+  font-size: 36px;
+  letter-spacing: 6px;
   cursor: pointer;
   z-index: 2;
+  border: none;
+  text-decoration: underline transparent;
+  transition: all 0.3s ease;
+}
+
+.stop:hover {
+  text-decoration: underline;
 }
 
 .intro-logo {
@@ -105,5 +133,29 @@
   100% {
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .start {
+    font-size: 24px;
+    width: 80vw;
+    top: 30vh;
+    left: 13vw;
+  }
+  .stop {
+    top: -80vh;
+    font-size: 24px;
+  }
+
+  .crawl > .title {
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+  }
+  .crawl > p {
+    font-size: 50px;
+    line-height: 70px;
+    width: 150vw;
   }
 }

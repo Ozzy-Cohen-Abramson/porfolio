@@ -53,8 +53,8 @@ export default function Intro(props) {
           <div className='fade'></div>
           {bottons ? (
             <button className='start' onClick={start}>
-              Hey! thank you for visiting my website! <br /> Click here to
-              start!
+              Welcome to my website <br />
+              <span>Start the jurney here</span>
             </button>
           ) : (
             <button className='stop' onClick={skip}>
@@ -72,27 +72,28 @@ export default function Intro(props) {
               <div className='crawl'>
                 <div className='title'>
                   <p>Episode IV</p>
-                  <h1>A New Hope</h1>
+                  <h1>a Developer rises</h1>
                 </div>
 
                 <p>
-                  It is a period of civil war. Rebel spaceships, striking from a
-                  hidden base, have won their first victory against the evil
-                  Galactic Empire.
+                  It is a period of code war. Full stack spaceships, striking
+                  from a hidden base, have won their first victory against the
+                  evil Galactic Bugs.
                 </p>
                 <br />
 
                 <p>
-                  During the battle, Rebel spies managed to steal secret plans
-                  to the Empire’s ultimate weapon, the DEATH STAR, an armored
-                  space station with enough power to destroy an entire planet.
+                  During the battle, FS spies managed to steal secret plans to
+                  the Galactic Bug's ultimate weapon, the DEATH BUG, an armored
+                  algoritm with enough power to destroy the whole internet.
                 </p>
                 <br />
 
                 <p>
-                  Pursued by the Empire’s sinister agents, Princess Leia races
-                  home aboard her starship, custodian of the stolen plans that
-                  can save her people and restore freedom to the galaxy….
+                  Pursued by the Galactic Bug's sinister agents, Developer
+                  Ozzy-Wan Coffee races to the repossitoty aboard his push
+                  commit, custodian of the stolen plans that can save his
+                  wibsite and restore freedom to the galaxy.
                 </p>
               </div>
             )}
