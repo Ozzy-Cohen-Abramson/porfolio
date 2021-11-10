@@ -7,49 +7,48 @@ export default function Navbar(props) {
     props.setNav(false);
   };
 
+  const introBtn = () => {
+    props.setMain(false);
+  };
+
   return (
-    <nav className="nav-menu active-nav">
+    <nav className='nav-menu active-nav'>
       <div
-        className="close-nav-menu outer-shadow hover-in-shadow"
-        onClick={closeNav}
-      >
+        className='close-nav-menu outer-shadow hover-in-shadow'
+        onClick={closeNav}>
         &times;
       </div>
-      <div className="nav-menu-inner">
+      <div className='nav-menu-inner'>
         <ul>
           <li>
             <a
-              href="#header"
-              className="inner-shadow active"
-              onClick={closeNav}
-            >
+              href='#header'
+              className='inner-shadow active'
+              onClick={closeNav}>
               home
             </a>
           </li>
           <li>
             <a
-              href="#about"
-              className="outer-shadow hover-in-shadow"
-              onClick={closeNav}
-            >
+              href='#about'
+              className='outer-shadow hover-in-shadow'
+              onClick={closeNav}>
               about
             </a>
           </li>
           <li>
             <a
-              href="#services"
-              className="outer-shadow hover-in-shadow"
-              onClick={closeNav}
-            >
+              href='#services'
+              className='outer-shadow hover-in-shadow'
+              onClick={closeNav}>
               services
             </a>
           </li>
           <li>
             <a
-              href="#projects"
-              className="outer-shadow hover-in-shadow"
-              onClick={closeNav}
-            >
+              href='#projects'
+              className='outer-shadow hover-in-shadow'
+              onClick={closeNav}>
               portfolio
             </a>
           </li>
@@ -64,16 +63,20 @@ export default function Navbar(props) {
           </li> */}
           <li>
             <a
-              href="#contact"
-              className="outer-shadow hover-in-shadow"
-              onClick={closeNav}
-            >
+              href='#contact'
+              className='outer-shadow hover-in-shadow'
+              onClick={closeNav}>
               cantact
+            </a>
+          </li>
+          <li>
+            <a className='outer-shadow hover-in-shadow' onClick={introBtn}>
+              Return to the intro
             </a>
           </li>
         </ul>
       </div>
-      <p className="copyrught-text">&copy; 2021 Odention</p>
+      <p className='copyrught-text'>&copy; 2021 Odention</p>
     </nav>
   );
 }

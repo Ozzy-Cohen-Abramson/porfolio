@@ -24,7 +24,7 @@ function App() {
         <>
           <DotNav />
           <Header setNav={setNav} />
-          {nav && <Navbar setNav={setNav} />}
+          {nav && <Navbar setNav={setNav} setMain={setMain} />}
           <Home />
           <About />
           <Services />

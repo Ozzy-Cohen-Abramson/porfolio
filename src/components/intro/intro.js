@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import introOgg from "../../music/StarWarsIntro.ogg";
 import introMp3 from "../../music/StarWarsIntro.mp3";
 import SWName from "../../img/SWName.png";
@@ -10,31 +10,46 @@ export default function Intro(props) {
   const [animation, setAnimation] = useState(false);
   const [bottons, setBottons] = useState(true);
   let swMp3 = new Audio(introMp3);
-  //   let swOgg = new Audio(introOgg);
 
-  const start = () => {
-    swMp3.play();
+  useEffect(() => {
+    swMp3 = document.getElementById("audio");
+  }, []);
+
+  const start = async () => {
+    try {
+      swMp3.play();
+    } catch (e) {
+      console.log(e);
+    }
+    // console.log(swMp3);
     setBottons(false);
-    // swOgg.play();
     setTimeout(() => {
       setTitle(true);
     }, 2000);
     setTimeout(() => {
       setAnimation(true);
-    }, 7000);
+    }, 5000);
+    setTimeout(() => {
+      swMp3.pause();
+      setMain(true);
+    }, 90000);
   };
 
   const skip = () => {
-    console.log("object");
-    swMp3.pause();
-    // swOgg.pause();
     setMain(true);
+    setBottons(true);
+    setTitle(false);
+    setAnimation(false);
   };
 
   return (
     <>
       {!main && (
         <div className='intro-container'>
+          <audio id='audio'>
+            <source src={introOgg} type='audio/ogg' />
+            <source src={introMp3} type='audio/mp3' />
+          </audio>
           <div className='fade'></div>
           {bottons ? (
             <button className='start' onClick={start}>
@@ -65,12 +80,14 @@ export default function Intro(props) {
                   hidden base, have won their first victory against the evil
                   Galactic Empire.
                 </p>
+                <br />
 
                 <p>
                   During the battle, Rebel spies managed to steal secret plans
                   to the Empire’s ultimate weapon, the DEATH STAR, an armored
                   space station with enough power to destroy an entire planet.
                 </p>
+                <br />
 
                 <p>
                   Pursued by the Empire’s sinister agents, Princess Leia races
