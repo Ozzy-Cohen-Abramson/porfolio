@@ -32,6 +32,9 @@ export default function Intro(props) {
     setTimeout(() => {
       swMp3.pause();
       setMain(true);
+      setBottons(true);
+      setTitle(false);
+      setAnimation(false);
     }, 90000);
   };
 
