@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/porfolio/static/css/main.133a1cd8.chunk.css",
+    "main.css": "/porfolio/static/css/main.edeab510.chunk.css",
     "main.js": "/porfolio/static/js/main.a6cfc7f4.chunk.js",
     "main.js.map": "/porfolio/static/js/main.a6cfc7f4.chunk.js.map",
     "runtime-main.js": "/porfolio/static/js/runtime-main.5ddd1a12.js",
@@ -30,7 +30,7 @@
     "static/css/5.ddc4ecdc.chunk.css.map": "/porfolio/static/css/5.ddc4ecdc.chunk.css.map",
     "static/css/6.ea69af18.chunk.css.map": "/porfolio/static/css/6.ea69af18.chunk.css.map",
     "static/css/7.f6372bc0.chunk.css.map": "/porfolio/static/css/7.f6372bc0.chunk.css.map",
-    "static/css/main.133a1cd8.chunk.css.map": "/porfolio/static/css/main.133a1cd8.chunk.css.map",
+    "static/css/main.edeab510.chunk.css.map": "/porfolio/static/css/main.edeab510.chunk.css.map",
     "static/js/2.9c827108.chunk.js.LICENSE.txt": "/porfolio/static/js/2.9c827108.chunk.js.LICENSE.txt",
     "static/media/Oz_Cohen_Abramson.docx.a329b620.pdf": "/porfolio/static/media/Oz_Cohen_Abramson.docx.a329b620.pdf",
     "static/media/SWName.47d2baff.png": "/porfolio/static/media/SWName.47d2baff.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ddd1a12.js",
     "static/js/2.9c827108.chunk.js",
-    "static/css/main.133a1cd8.chunk.css",
+    "static/css/main.edeab510.chunk.css",
     "static/js/main.a6cfc7f4.chunk.js"
   ]
 }
