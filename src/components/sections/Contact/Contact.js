@@ -39,18 +39,18 @@ export default function Contact() {
   ];
 
   return (
-    <div className="contact-section section" id="contact">
-      <div className="container">
-        <div className="row">
-          <div className="section-title">
-            <h2 data-heading="Contact">Get in touch</h2>
+    <div className='contact-section section' id='contact'>
+      <div className='container'>
+        <div className='row'>
+          <div className='section-title'>
+            <h2 data-heading='Contact'>Get in touch</h2>
           </div>
         </div>
-        <div className="row">
+        <div className='row contact-row'>
           {contactArr.map((item) => {
             return (
-              <div className="contact-item" key={item.id}>
-                <div className="contact-item-inner outer-shadow">
+              <div className='contact-item' key={item.id}>
+                <div className='contact-item-inner outer-shadow'>
                   <i className={`fa fa-${item.class}`}></i>
                   <span>{item.type}</span>
                   <p>{item.contact}</p>
@@ -59,38 +59,38 @@ export default function Contact() {
             );
           })}
         </div>
-        <div className="row">
-          <div className="contact-form">
+        <div className='row'>
+          <div className='contact-form'>
             <form onSubmit={HandleSubmit}>
-              <div className="row">
-                <div className="w-50">
-                  <div className="input-group outer-shadow">
+              <div className='row contact-row'>
+                <div className='w-50 form-fix'>
+                  <div className='input-group outer-shadow'>
                     <input
-                      type="text"
-                      placeholder="Name"
-                      className="input-control"
+                      type='text'
+                      placeholder='Name'
+                      className='input-control'
                       value={name}
                       onChange={(e) => {
                         setName(e.target.value);
                       }}
                     />
                   </div>
-                  <div className="input-group outer-shadow">
+                  <div className='input-group outer-shadow'>
                     <input
-                      type="text"
-                      placeholder="Email"
-                      className="input-control"
+                      type='text'
+                      placeholder='Email'
+                      className='input-control'
                       value={email}
                       onChange={(e) => {
                         setEmail(e.target.value);
                       }}
                     />
                   </div>
-                  <div className="input-group outer-shadow">
+                  <div className='input-group outer-shadow'>
                     <input
-                      type="text"
-                      placeholder="Subject"
-                      className="input-control"
+                      type='text'
+                      placeholder='Subject'
+                      className='input-control'
                       value={subject}
                       onChange={(e) => {
                         setSubject(e.target.value);
@@ -98,25 +98,23 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                <div className="w-50">
-                  <div className="input-group outer-shadow">
+                <div className='w-50 form-fix'>
+                  <div className='input-group outer-shadow'>
                     <textarea
-                      className="input-control"
-                      placeholder="Message"
+                      className='input-control'
+                      placeholder='Message'
                       value={message}
                       onChange={(e) => {
                         setMessage(e.target.value);
-                      }}
-                    ></textarea>
+                      }}></textarea>
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="submit-btn">
+              <div className='row'>
+                <div className='submit-btn'>
                   <button
-                    type="submit"
-                    className="btn-1 outer-shadow hover-in-shadow"
-                  >
+                    type='submit'
+                    className='btn-1 outer-shadow hover-in-shadow'>
                     Send message
                   </button>
                 </div>

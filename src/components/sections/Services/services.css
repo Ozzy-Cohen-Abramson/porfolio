@@ -5,7 +5,7 @@
 
 .service-section .service-item {
   flex: 0 0 33.33%;
-  max-width: 33.33%;
+  width: 33.33%;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -65,4 +65,18 @@
   color: var(--text-black-600);
   margin: 0;
   line-height: 26px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .service-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-item {
+    margin: 10px auto;
+    width: 90vw !important;
+  }
 }

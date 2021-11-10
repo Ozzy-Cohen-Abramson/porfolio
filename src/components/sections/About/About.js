@@ -38,47 +38,44 @@ export default function About() {
   };
 
   return (
-    <section className="about-section section" id="about">
-      <div className="container">
-        <div className="row">
-          <div className="section-title">
-            <h2 data-heading="main info">About me</h2>
+    <section className='about-section section' id='about'>
+      <div className='container'>
+        <div className='row'>
+          <div className='section-title'>
+            <h2 data-heading='main info'>About me</h2>
           </div>
         </div>
-        <div className="row">
-          <div className="about-img">
-            <div className="img-box inner-shadow">
+        <div className='row about-body'>
+          <div className='about-img'>
+            <div className='img-box inner-shadow'>
               <img
                 src={profileImg}
-                alt="profile-pic"
-                className="outer-shadow"
+                alt='profile-pic'
+                className='outer-shadow'
               />
             </div>
-            <div className="social-links">
+            <div className='social-links'>
               <a
-                href="https://www.facebook.com/dinebag.oz/"
-                target="_blank"
-                className="outer-shadow hover-in-shadow facebook"
-              >
-                <i className="fab fa-facebook-f"></i>
+                href='https://www.facebook.com/dinebag.oz/'
+                target='_blank'
+                className='outer-shadow hover-in-shadow facebook'>
+                <i className='fab fa-facebook-f'></i>
               </a>
               <a
-                href="https://github.com/Ozzy-Cohen-Abramson"
-                target="_blank"
-                className="outer-shadow hover-in-shadow github"
-              >
-                <i className="fab fa-github"></i>
+                href='https://github.com/Ozzy-Cohen-Abramson'
+                target='_blank'
+                className='outer-shadow hover-in-shadow github'>
+                <i className='fab fa-github'></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/ozzy-cohen-abramson-232304209/"
-                target="_blank"
-                className="outer-shadow hover-in-shadow linked"
-              >
-                <i className="fab fa-linkedin-in "></i>
+                href='https://www.linkedin.com/in/ozzy-cohen-abramson-232304209/'
+                target='_blank'
+                className='outer-shadow hover-in-shadow linked'>
+                <i className='fab fa-linkedin-in '></i>
               </a>
             </div>
           </div>
-          <div className="about-info">
+          <div className='about-info'>
             <p>
               <span>Hey! My name is Ozzy. I'm fullstack developer.</span> Lorem,
               ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem
@@ -95,39 +92,37 @@ export default function About() {
               sunt perferendis ab earum! Laudantium totam saepe, atque
               necessitatibus velit illum maiores quam.
             </p>
-            <a
-              href={CV}
-              target="_black"
-              className="btn-1 outer-shadow hover-in-shadow"
-            >
-              Download CV
-            </a>
-            <a href="#" className="btn-1 outer-shadow hover-in-shadow">
-              Hire Me
-            </a>
+            <div className='about-buttons'>
+              <a
+                href={CV}
+                target='_black'
+                className='btn-1 outer-shadow hover-in-shadow'>
+                Download CV
+              </a>
+              <a href='#' className='btn-1 outer-shadow hover-in-shadow'>
+                Hire Me
+              </a>
+            </div>
           </div>
         </div>
-        <div className="row">
-          <div className="about-tabs">
+        <div className='row'>
+          <div className='about-tabs'>
             <span
               className={`tab-item ${skills && activeClass}`}
-              data-target=".skills"
-              onClick={ChangeAbout}
-            >
+              data-target='.skills'
+              onClick={ChangeAbout}>
               Skills
             </span>
             <span
               className={`tab-item ${experience && activeClass}`}
-              data-target=".experience"
-              onClick={ChangeAbout}
-            >
+              data-target='.experience'
+              onClick={ChangeAbout}>
               Experience
             </span>
             <span
               className={`tab-item ${education && activeClass}`}
-              data-target=".education"
-              onClick={ChangeAbout}
-            >
+              data-target='.education'
+              onClick={ChangeAbout}>
               Education
             </span>
           </div>
