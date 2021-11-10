@@ -93,7 +93,7 @@ export default function Intro(props) {
                   Pursued by the Galactic Bug's sinister agents, Developer
                   Ozzy-Wan Coffee races to the repossitoty aboard his push
                   commit, custodian of the stolen plans that can save his
-                  wibsite and restore freedom to the galaxy.
+                  wibsite and restore freedom to the galaxy...
                 </p>
               </div>
             )}
