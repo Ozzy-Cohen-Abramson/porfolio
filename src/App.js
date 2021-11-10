@@ -11,22 +11,29 @@ import Contact from "./components/sections/Contact/Contact";
 import ScrollArrow from "./components/ScrollArrow/ScrollArrow";
 import DotNav from "./components/DonNav/DotNav";
 import StyleSwitch from "./components/styleSwitch/StyleSwitch";
+import Intro from "./components/intro/intro";
 
 function App() {
   const [nav, setNav] = useState(false);
+  const [main, setMain] = useState(false);
 
   return (
     <div className='App'>
-      <DotNav />
-      <Header setNav={setNav} />
-      {nav && <Navbar setNav={setNav} />}
-      <Home />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <ScrollArrow />
-      <StyleSwitch />
+      <Intro setMain={setMain} main={main} />
+      {main && (
+        <>
+          <DotNav />
+          <Header setNav={setNav} />
+          {nav && <Navbar setNav={setNav} />}
+          <Home />
+          <About />
+          <Services />
+          <Portfolio />
+          <Contact />
+          <ScrollArrow />
+          <StyleSwitch />{" "}
+        </>
+      )}
     </div>
   );
 }
