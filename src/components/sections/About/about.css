@@ -308,7 +308,7 @@
 
   .about-section .timeline .timeline-item {
     max-width: 90%;
-    width: 80vw;
+    width: 100vw;
     margin: 10px 0;
   }
 
@@ -322,6 +322,9 @@
   .about-section .timeline .timeline-item-inner:before {
     content: "";
     display: none;
+  }
+  .about-section .timeline .timeline-item-inner {
+    padding: 30px 15px;
   }
   .about-section .timeline .timeline-item-inner i {
     display: none;
