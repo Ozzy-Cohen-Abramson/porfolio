@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 import "./contact.css";
 
@@ -10,7 +11,25 @@ export default function Contact() {
 
   const HandleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, subject, message);
+    // console.log(name, email, subject, message);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_s2nh3aj",
+        "template_4rh3dls",
+        e.target,
+        "user_LVQqi60QiKbKQIqVDRwS3"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Thank you!! I'll get back to you as soon as possible.");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setName("");
     setEmail("");
     setSubject("");
@@ -70,6 +89,7 @@ export default function Contact() {
                       placeholder='Name'
                       className='input-control'
                       value={name}
+                      name='from_name'
                       onChange={(e) => {
                         setName(e.target.value);
                       }}
@@ -81,6 +101,7 @@ export default function Contact() {
                       placeholder='Email'
                       className='input-control'
                       value={email}
+                      name='from_email'
                       onChange={(e) => {
                         setEmail(e.target.value);
                       }}
@@ -92,6 +113,7 @@ export default function Contact() {
                       placeholder='Subject'
                       className='input-control'
                       value={subject}
+                      name='subject'
                       onChange={(e) => {
                         setSubject(e.target.value);
                       }}
@@ -104,6 +126,7 @@ export default function Contact() {
                       className='input-control'
                       placeholder='Message'
                       value={message}
+                      name='message'
                       onChange={(e) => {
                         setMessage(e.target.value);
                       }}></textarea>
