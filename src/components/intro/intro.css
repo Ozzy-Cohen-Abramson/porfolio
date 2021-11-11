@@ -108,6 +108,28 @@
   text-align: justify;
 }
 
+.intro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -105vh;
+  width: 750px;
+  padding: 10px;
+  font-size: 36px;
+  line-height: 50px;
+  color: rgb(75, 213, 238);
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .crawl {
   position: relative;
   top: 99999px;
@@ -144,7 +166,7 @@
     left: 13vw;
   }
   .stop {
-    margin-bottom: 80vh;
+    margin-bottom: 70vh;
     right: 4vh;
     font-size: 24px;
   }
@@ -158,5 +180,19 @@
     font-size: 50px;
     line-height: 70px;
     width: 150vw;
+  }
+
+  .intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-top: -115vh;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: start;
+    color: rgb(75, 213, 238);
+    animation: fade-in 1s;
   }
 }

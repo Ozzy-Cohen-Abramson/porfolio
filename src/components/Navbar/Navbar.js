@@ -69,11 +69,6 @@ export default function Navbar(props) {
               cantact
             </a>
           </li>
-          <li>
-            <a className='outer-shadow hover-in-shadow' onClick={introBtn}>
-              Return to the intro
-            </a>
-          </li>
         </ul>
       </div>
       <p className='copyrught-text'>&copy; 2021 Odention</p>

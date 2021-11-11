@@ -6,6 +6,7 @@ import "./intro.css";
 
 export default function Intro(props) {
   const { setMain, main } = props;
+  const [introText, setIntroText] = useState(false);
   const [title, setTitle] = useState(false);
   const [animation, setAnimation] = useState(false);
   const [bottons, setBottons] = useState(true);
@@ -16,16 +17,20 @@ export default function Intro(props) {
   }, []);
 
   const start = async () => {
-    try {
-      swMp3.play();
-    } catch (e) {
-      console.log(e);
-    }
+    setIntroText(true);
     // console.log(swMp3);
     setBottons(false);
     setTimeout(() => {
-      setTitle(true);
+      try {
+        swMp3.play();
+      } catch (e) {
+        console.log(e);
+      }
     }, 2000);
+    setTimeout(() => {
+      setIntroText(false);
+      setTitle(true);
+    }, 4000);
     setTimeout(() => {
       setAnimation(true);
     }, 5000);
@@ -48,7 +53,7 @@ export default function Intro(props) {
   return (
     <>
       {!main && (
-        <div className='intro-container'>
+        <div className='intro-container' id='intro'>
           <audio id='audio'>
             <source src={introOgg} type='audio/ogg' />
             <source src={introMp3} type='audio/mp3' />
@@ -57,7 +62,7 @@ export default function Intro(props) {
           {bottons ? (
             <button className='start' onClick={start}>
               Welcome to my website <br />
-              <span>Start the jurney here</span>
+              <span>Start the journey here</span>
             </button>
           ) : (
             <button className='stop' onClick={skip}>
@@ -66,6 +71,11 @@ export default function Intro(props) {
           )}
 
           <section className='star-wars'>
+            {introText && (
+              <h5 className='intro-text'>
+                <spam>A long time ago in a galaxy far, far away...</spam>
+              </h5>
+            )}
             {title && (
               <section className='intro-logo'>
                 <img src={SWName} alt='' border='0' />
@@ -81,7 +91,7 @@ export default function Intro(props) {
                 <p>
                   It is a period of code war. Full stack spaceships, striking
                   from a hidden base, have won their first victory against the
-                  evil Galactic Bugs.
+                  evil Bugs Empire.
                 </p>
                 <br />
 
@@ -93,8 +103,8 @@ export default function Intro(props) {
                 <br />
 
                 <p>
-                  Pursued by the Galactic Bug's sinister agents, Developer
-                  Ozzy-Wan Coffee races to the repossitoty aboard his push
+                  Pursued by the Bug Empire's sinister agents, Developer
+                  Ozzy-Wan Coffee races to the repossitory aboard his push
                   commit, custodian of the stolen plans that can save his
                   wibsite and restore freedom to the galaxy...
                 </p>
