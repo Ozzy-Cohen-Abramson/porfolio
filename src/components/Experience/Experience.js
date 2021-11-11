@@ -11,12 +11,13 @@ export default function Experience() {
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
                   <span>October, 2021 - present</span>
-                  <h3>Work Description</h3>
+                  <h3>Full stack developer</h3>
                   <h4>Fitback, Israel</h4>
                   <p>
-                    Developing a new fitness technology, useng ML in Python. I
-                    works both on the Fe and the Be as I write the
-                    funcitonallity for the exercises.
+                    Developing real-time feedback workout for tracking user
+                    movements and exercise, using ML in Python / JS. I work both
+                    on the Fe and the Be as I write the funcitonallity for the
+                    exercises.
                   </p>
                 </div>
               </div>

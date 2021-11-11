@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import profileImg from "../../../img/profile.png";
+import aboutImg from "../../../img/about.png";
 import CV from "../../../Oz_Cohen_Abramson.docx.pdf";
 import Skills from "../../Skills/Skills";
 import Experience from "../../Experience/Experience";
@@ -48,11 +48,7 @@ export default function About() {
         <div className='row about-body'>
           <div className='about-img'>
             <div className='img-box inner-shadow'>
-              <img
-                src={profileImg}
-                alt='profile-pic'
-                className='outer-shadow'
-              />
+              <img src={aboutImg} alt='profile-pic' className='outer-shadow' />
             </div>
             <div className='social-links'>
               <a
@@ -77,20 +73,16 @@ export default function About() {
           </div>
           <div className='about-info'>
             <p>
-              <span>Hey! My name is Ozzy. I'm fullstack developer.</span> Lorem,
-              ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem
-              ipsa et inventore, vel harum, deleniti, eveniet sunt perferendis
-              ab earum! Laudantium totam saepe, atque necessitatibus velit illum
-              maiores quam. ipsum dolor sit amet consectetur adipisicing elit.
-              Mollitia quidem ipsa et inventore, vel harum, deleniti, eveniet
-              sunt perferendis ab earum! Laudantium totam saepe, atque
-              necessitatibus velit illum maiores quam. ipsum dolor sit amet
-              consectetur adipisicing elit.
+              <span>Hey! My name is Ozzy and I'm fullstack developer.</span> A
+              year ago I fell in love with the world of coding. As I love
+              challenges, I try to push my self as far as I can for every day. I
+              also try to keep my mind open to new approaches to solve daily
+              problems.
             </p>
             <p>
-              Mollitia quidem ipsa et inventore, vel harum, deleniti, eveniet
-              sunt perferendis ab earum! Laudantium totam saepe, atque
-              necessitatibus velit illum maiores quam.
+              I think that the <span>most</span> special thing about being a
+              developer is that I know that I can't stay put and the information
+              I've got today will never be sufficient.
             </p>
             <div className='about-buttons'>
               <a
