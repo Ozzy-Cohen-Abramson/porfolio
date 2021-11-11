@@ -49,7 +49,7 @@ export default function Skills() {
             </div>
           </div>
 
-          <div className='skill-item'>
+          {/* <div className='skill-item'>
             <p>Redux</p>
             <div className='progress inner-shadow'>
               <div
@@ -58,7 +58,7 @@ export default function Skills() {
                 <span>80%</span>
               </div>
             </div>
-          </div>
+          </div> 
 
           <div className='skill-item'>
             <p>Angular</p>
@@ -69,7 +69,7 @@ export default function Skills() {
                 <span>30%</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className='skill-item'>
             <p>Node.js</p>

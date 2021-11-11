@@ -292,4 +292,38 @@
     justify-content: center;
     width: 100vw;
   }
+
+  .about-section .timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 6vw;
+    max-width: 150vw;
+  }
+
+  .about-section .timeline:before {
+    content: "";
+    display: none;
+  }
+
+  .about-section .timeline .timeline-item {
+    max-width: 90%;
+    width: 80vw;
+    margin: 10px 0;
+  }
+
+  .about-section .timeline .timeline-item:nth-child(odd) {
+    padding-right: 15px;
+    text-align: left;
+  }
+  .about-section .timeline .timeline-item:nth-child(even) {
+    padding-left: 15px;
+  }
+  .about-section .timeline .timeline-item-inner:before {
+    content: "";
+    display: none;
+  }
+  .about-section .timeline .timeline-item-inner i {
+    display: none;
+  }
 }
