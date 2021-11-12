@@ -53,6 +53,7 @@ export default function Intro(props) {
     setBottons(true);
     setTitle(false);
     setAnimation(false);
+    window.location.href = `${window.location}#header`;
   };
 
   return (

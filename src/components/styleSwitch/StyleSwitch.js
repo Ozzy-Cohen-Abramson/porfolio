@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import "./styleSwitch.css";
 
 export default function StyleSwitch() {
@@ -54,11 +54,12 @@ export default function StyleSwitch() {
     setSwitcherClass(false);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const localColor = localStorage.getItem("color");
-    const localTheme = localStorage.getItem("theme");
+    const localTheme = localStorage.getItem("theme") || "fa-moon";
     document.documentElement.style.setProperty("--skin-color", localColor);
     setLightDark(localTheme);
+    toggleLightDark();
   }, []);
 
   useEffect(() => {
