@@ -14,6 +14,11 @@ export default function Intro(props) {
 
   useEffect(() => {
     swMp3 = document.getElementById("audio");
+    if (window.location.hash.includes("#")) {
+      {
+        setMain(true);
+      }
+    }
   }, []);
 
   const start = async () => {

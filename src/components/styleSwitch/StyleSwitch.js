@@ -32,12 +32,34 @@ export default function StyleSwitch() {
         ? "0 0 0 #666666, 0 0 0 #555555"
         : "0 0 0 #d0d0d0, 0 0 0 #f8f8f8"
     );
+    document.documentElement.style.setProperty(
+      "--inner-shadow",
+      lightDark === "fa-moon"
+        ? "3px 3px 3px #666666, -3px -3px 3px #555555"
+        : "3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8"
+    );
+    document.documentElement.style.setProperty(
+      "--inner-shadow-0",
+      lightDark === "fa-moon"
+        ? "0 0 0 #666666, 0 0 0 #555555"
+        : "0 0 0 #d0d0d0, 0 0 0 #f8f8f8"
+    );
+    localStorage.setItem("theme", lightDark);
   };
 
   const setActiveStyles = (color) => {
     document.documentElement.style.setProperty("--skin-color", color);
+    localStorage.setItem("color", color);
+
     setSwitcherClass(false);
   };
+
+  useEffect(() => {
+    const localColor = localStorage.getItem("color");
+    const localTheme = localStorage.getItem("theme");
+    document.documentElement.style.setProperty("--skin-color", localColor);
+    setLightDark(localTheme);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
