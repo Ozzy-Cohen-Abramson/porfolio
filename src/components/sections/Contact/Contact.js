@@ -41,7 +41,7 @@ export default function Contact() {
       id: 1,
       class: "phone",
       type: "Phone",
-      contact: "054-700-2414",
+      contact: "+972 54 700 2414",
     },
     {
       id: 2,

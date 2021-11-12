@@ -12,7 +12,8 @@
   transition: opacity 0.4s;
   opacity: 0.5;
   font-size: 26px;
-  border: 3px solid black;
+  color: var(--text-black-900);
+  border: 3px solid var(--text-black-900);
   border-radius: 50%;
 }
 

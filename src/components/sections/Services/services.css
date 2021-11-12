@@ -26,6 +26,7 @@
   display: block;
   margin: 0 auto 30px;
   position: relative;
+  color: var(--text-black-900);
 }
 .service-section .service-item-inner .icon:after {
   content: "";

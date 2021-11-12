@@ -18,15 +18,14 @@ export default function Intro(props) {
 
   const start = async () => {
     setIntroText(true);
+    try {
+      swMp3.play();
+    } catch (e) {
+      console.log(e);
+    }
     // console.log(swMp3);
     setBottons(false);
-    setTimeout(() => {
-      try {
-        swMp3.play();
-      } catch (e) {
-        console.log(e);
-      }
-    }, 2000);
+    setTimeout(() => {}, 2000);
     setTimeout(() => {
       setIntroText(false);
       setTitle(true);
@@ -40,6 +39,7 @@ export default function Intro(props) {
       setBottons(true);
       setTitle(false);
       setAnimation(false);
+      window.location.href = `${window.location}#header`;
     }, 90000);
   };
 
@@ -55,7 +55,7 @@ export default function Intro(props) {
       {!main && (
         <div className='intro-container' id='intro'>
           <audio id='audio'>
-            <source src={introOgg} type='audio/ogg' />
+            {/* <source src={introOgg} type='audio/ogg' /> */}
             <source src={introMp3} type='audio/mp3' />
           </audio>
           <div className='fade'></div>
@@ -65,7 +65,7 @@ export default function Intro(props) {
               <span>Start the journey here</span>
             </button>
           ) : (
-            <button className='stop' onClick={skip}>
+            <button href='#header' className='stop' onClick={skip}>
               skip
             </button>
           )}

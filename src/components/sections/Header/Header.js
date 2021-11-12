@@ -11,9 +11,6 @@ export default function Header(props) {
     <header className='header' id='header'>
       <div className='header-container'>
         <div className='row justify-content-between'>
-          <div className='logo'>
-            <a href='index.html'>Z</a>
-          </div>
           <div
             className='hamburger-btn outer-shadow hover-in-shadow'
             onClick={showNav}>

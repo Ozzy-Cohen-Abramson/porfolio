@@ -12,10 +12,30 @@ export default function StyleSwitch() {
 
   const toggleLightDark = () => {
     lightDark === "fa-moon" ? setLightDark("fa-sun") : setLightDark("fa-moon");
+    document.documentElement.style.setProperty(
+      "--bg-black-50",
+      lightDark === "fa-moon" ? "#121212" : "#eff0f4"
+    );
+    document.documentElement.style.setProperty(
+      "--text-black-900",
+      lightDark === "fa-moon" ? "#dddddd" : "#121212"
+    );
+    document.documentElement.style.setProperty(
+      "--outer-shadow",
+      lightDark === "fa-moon"
+        ? "3px 3px 3px #666666, -3px -3px 3px #555555"
+        : "3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8"
+    );
+    document.documentElement.style.setProperty(
+      "--outer-shadow-0",
+      lightDark === "fa-moon"
+        ? "0 0 0 #666666, 0 0 0 #555555"
+        : "0 0 0 #d0d0d0, 0 0 0 #f8f8f8"
+    );
   };
 
   const setActiveStyles = (color) => {
-    import(`./styles/${color}.css`);
+    document.documentElement.style.setProperty("--skin-color", color);
     setSwitcherClass(false);
   };
 
@@ -53,19 +73,19 @@ export default function StyleSwitch() {
           <div className='colors'>
             <span
               className='color-1'
-              onClick={() => setActiveStyles("color-1")}></span>
+              onClick={() => setActiveStyles("#fb839e")}></span>
             <span
               className='color-2'
-              onClick={() => setActiveStyles("color-2")}></span>
+              onClick={() => setActiveStyles("#ec9412")}></span>
             <span
               className='color-3'
-              onClick={() => setActiveStyles("color-3")}></span>
+              onClick={() => setActiveStyles("#1fc586")}></span>
             <span
               className='color-4'
-              onClick={() => setActiveStyles("color-4")}></span>
+              onClick={() => setActiveStyles("#2eb1ed")}></span>
             <span
               className='color-5'
-              onClick={() => setActiveStyles("color-5")}></span>
+              onClick={() => setActiveStyles("#cc3a3b")}></span>
           </div>
         </div>
       )}

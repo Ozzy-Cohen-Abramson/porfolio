@@ -91,7 +91,7 @@ export default function About() {
                 className='btn-1 outer-shadow hover-in-shadow'>
                 Download CV
               </a>
-              <a href='#' className='btn-1 outer-shadow hover-in-shadow'>
+              <a href='#contact' className='btn-1 outer-shadow hover-in-shadow'>
                 Hire Me
               </a>
             </div>

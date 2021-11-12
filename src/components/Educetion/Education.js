@@ -14,11 +14,9 @@ export default function Education() {
                   <h3>Full Stack Development</h3>
                   <h4>Israel Tech challenge, Israel</h4>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia quidem ipsa et inventore, vel harum, deleniti,
-                    eveniet sunt perferendis ab earum! Laudantium totam saepe,
-                    atque necessitatibus velit illum maiores quam. ipsum dolor
-                    sit amet consectetur adipisicing elit.
+                    A 6-month intensive training program for tech-savvy
+                    individuals who wish to launch a new career as web and app
+                    programmers in the high-tech industry.
                   </p>
                 </div>
               </div>
@@ -44,11 +42,10 @@ export default function Education() {
                   <h3>Science and teaching prescription , B.ed</h3>
                   <h4>Lifshitz College for Education, Israel</h4>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia quidem ipsa et inventore, vel harum, deleniti,
-                    eveniet sunt perferendis ab earum! Laudantium totam saepe,
-                    atque necessitatibus velit illum maiores quam. ipsum dolor
-                    sit amet consectetur adipisicing elit.
+                    The goal of this program is to train quality science
+                    teachers with an emphasis on professionalism in the fields
+                    of biology, chemistry, and physics, while developing mastery
+                    of advanced teaching technologies and laboratory work.
                   </p>
                 </div>
               </div>
