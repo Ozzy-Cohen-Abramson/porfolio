@@ -4,7 +4,7 @@ import "./styleSwitch.css";
 export default function StyleSwitch() {
   const [switcherClass, setSwitcherClass] = useState(false);
   const [height, setHeight] = useState(0);
-  const [lightDark, setLightDark] = useState("fa-moon");
+  const [lightDark, setLightDark] = useState(localStorage.getItem("theme"));
 
   const toggleSwitcher = () => {
     setSwitcherClass(!switcherClass);
@@ -56,14 +56,14 @@ export default function StyleSwitch() {
 
   useLayoutEffect(() => {
     const localColor = localStorage.getItem("color");
-    const localTheme = localStorage.getItem("theme") || "fa-moon";
+    const localTheme = localStorage.getItem("theme");
     document.documentElement.style.setProperty("--skin-color", localColor);
     setLightDark(localTheme);
-    toggleLightDark();
   }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
+    toggleLightDark();
     return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
 
