@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import aboutImg from "../../../img/about.png";
 import CV from "../../../Oz_Cohen_Abramson.docx.pdf";
@@ -12,6 +12,7 @@ export default function About() {
   const [skills, setSkills] = useState(true);
   const [experience, setExperience] = useState(false);
   const [education, setEducation] = useState(false);
+  let aboutRef = useRef(null);
 
   const activeClass = "outer-shadow active";
 

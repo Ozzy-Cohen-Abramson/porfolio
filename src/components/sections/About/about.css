@@ -91,7 +91,7 @@
   padding: 5px 10px;
   border-radius: 30px;
   transition: all 0.3s ease;
-  font-size: 16px;
+  font-size: 22px;
   color: var(--text-black-600);
   font-weight: 500;
 }
@@ -113,35 +113,61 @@
   display: block;
   animation: fadeInTop 0.8s ease;
 }
+
+.skills-row {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin: 0 5vw 25px;
+}
+
 .about-section .skills {
   padding: 0 0 40px;
-}
-.about-section .skills .skill-item p {
-  font-size: 16px;
-  color: var(--text-black-600);
-  text-transform: capitalize;
-  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .about-section .skills .skill-item {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 0 15px;
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 40px 30px;
+  font-size: 5vw;
+  font-family: "devicon" !important;
+  border: 1px solid var(--text-black-600);
+  color: var(--text-black-600);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
-.about-section .skills .skill-item .progress {
-  height: 20px;
-  border-radius: 10px;
-  position: relative;
+.about-section .skills .skill-item:hover {
+  font-size: 90px;
+  border: 1px solid var(--skin-color);
+  box-shadow: 0 0 15px var(--skin-color);
+  color: var(--skin-color);
+  transition: all 0.5s ease;
 }
 
-.about-section .skills .skill-item .progress-bar {
-  background-color: var(--text-black-600);
-  height: 6px;
-  left: 7px;
-  top: 7px;
-  position: absolute;
-  border-radius: 10px;
+.dev-icon {
+  transition: all 0.5s ease;
+}
+
+.about-section .skills .skill-item:hover .dev-icon {
+  font-size: 5vw;
+  color: var(--skin-color);
+  font-family: "devicon" !important;
+  text-shadow: 0 0 5px var(--skin-color);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .about-section .skills .skill-item .progress-bar span {
@@ -290,11 +316,6 @@
     display: block;
   }
 
-  .skills-row {
-    display: grid;
-    width: 200%;
-  }
-
   .about-info p {
     width: 90vw;
     padding: 15px;
@@ -342,5 +363,40 @@
   }
   .about-section .timeline .timeline-item-inner i {
     display: none;
+  }
+
+  .skills-row {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    margin-left: 8vw;
+    width: 100%;
+  }
+
+  .about-section .skills .skill-item {
+    /* display: grid;
+    grid-template-columns: 40vw 40vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    margin: 10px 5px;
+    font-size: 70px;
+    font-family: "devicon" !important;
+    border: 1px solid var(--text-black-900);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .about-section .skills .skill-item:hover {
+    font-size: 90px;
+    border: 1px solid var(--skin-color);
+    box-shadow: 0 0 15px var(--skin-color);
+    color: var(--skin-color);
+    transition: all 0.5s ease;
+  }
+
+  .about-section .skills .skill-item:hover .dev-icon {
+    font-size: 23vw;
   }
 }

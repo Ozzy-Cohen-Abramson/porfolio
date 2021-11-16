@@ -18,10 +18,7 @@ export default function Services() {
                 <i className='fa fa-mobile-alt'></i>
               </div>
               <h3>Responsive design</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                sed.
-              </p>
+              <p>Creating web pages that look good on all devices.</p>
             </div>
           </div>
           <div className='service-item'>
@@ -31,8 +28,8 @@ export default function Services() {
               </div>
               <h3>Web design</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                sed.
+                Building the website while thinking about the components it'll
+                contain.
               </p>
             </div>
           </div>
@@ -42,10 +39,7 @@ export default function Services() {
                 <i className='fa fa-palette'></i>
               </div>
               <h3>graphic design</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                sed.
-              </p>
+              <p>Emphasis on colors, text and user experience.</p>
             </div>
           </div>
           <div className='service-item'>
@@ -55,8 +49,8 @@ export default function Services() {
               </div>
               <h3>clean code</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                sed.
+                A consistent, clean, and tidy HTML / CSS / JS code. Makes it
+                easier for developoers to read and understand your code.
               </p>
             </div>
           </div>
@@ -66,10 +60,7 @@ export default function Services() {
                 <i className='fa fa-server'></i>
               </div>
               <h3>server side</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                sed.
-              </p>
+              <p>Construction and maintenance of servers.</p>
             </div>
           </div>
           <div className='service-item'>
@@ -77,10 +68,9 @@ export default function Services() {
               <div className='icon inner-shadow'>
                 <i className='fa fa-bullhorn'></i>
               </div>
-              <h3>supprt</h3>
+              <h3>support</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                sed.
+                Providing users an avenue for reporting system related issues.
               </p>
             </div>
           </div>
