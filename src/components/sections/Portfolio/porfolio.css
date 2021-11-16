@@ -64,6 +64,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .portfolio-popup {
+    z-index: 10000;
+  }
+
   .projects-container {
     flex-direction: column;
   }
@@ -73,5 +77,30 @@
   .porfolio-section .portfolio-item {
     width: 100vw;
     margin-left: 5%;
+  }
+  .pp-project-details .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .portfolio-popup .info {
+    max-width: 100%;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--text-black-600);
+  }
+  .portfolio-popup .description {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .pp-details .pp-project-details-btn {
+    position: absolute;
+    left: 85vw;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pp-details .pp-project-details-btn i {
+    margin-left: -1px;
   }
 }

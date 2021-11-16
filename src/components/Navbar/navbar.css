@@ -1,5 +1,6 @@
 .active-nav {
   animation: fadeInTop 0.1s ease;
+  overflow: hidden !important;
 }
 
 .nav-menu {

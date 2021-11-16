@@ -7,24 +7,21 @@ export default function WebItem() {
   const [details, showDetailes] = useState(false);
   const [innerDetails, setInnerDetails] = useState(false);
   const [imgNumber, setImageNumber] = useState(0);
+  const [portofiloItem, setPortfolioItem] = useState();
 
   const showDetailesFunc = (e) => {
-    // console.log(e.target);
+    console.log(porfolioArr[e.target.id]);
+    setPortfolioItem(e.target.id);
     showDetailes(!details);
   };
 
   const closePopup = () => {
-    console.log("object");
     showDetailes(false);
   };
 
   const innerDetailsFunc = () => {
     setInnerDetails(!innerDetails);
   };
-
-  useEffect(() => {
-    console.log(porfolioArr[0]);
-  }, []);
 
   const nextImg = () => {
     console.log("next");
@@ -45,19 +42,24 @@ export default function WebItem() {
 
   return (
     <div className='projects-container'>
-      {porfolioArr.map((item) => {
+      {porfolioArr.map((item, key) => {
         return (
-          <div className='portfolio-item-container'>
-            <div className='row portfolio-items'>
-              <div className='portfolio-item'>
-                <div className='portfolio-item-inner outer-shadow'>
+          <div id={key} className='portfolio-item-container'>
+            <div id={key} className='row portfolio-items'>
+              <div id={key} className='portfolio-item'>
+                <div id={key} className='portfolio-item-inner outer-shadow'>
                   <div
+                    id={key}
                     className='portfolio-item-img'
                     onClick={showDetailesFunc}>
-                    <img src={item.images[0]} alt='stock' />
-                    <span className='view-project'>View project</span>
+                    <img id={key} src={item.images[0]} alt='stock' />
+                    <span id={key} className='view-project'>
+                      View project
+                    </span>
                   </div>
-                  <p className='portfolio-item-title'>{item.name}</p>
+                  <p id={key} className='portfolio-item-title'>
+                    {item.name}
+                  </p>
                 </div>
               </div>
             </div>
@@ -65,9 +67,14 @@ export default function WebItem() {
               <div className='pp portfolio-popup '>
                 {innerDetails && (
                   <div className='pp-details'>
+                    <div
+                      className='pp-project-details-btn outer-shadow hover-in-shadow'
+                      onClick={innerDetailsFunc}>
+                      <i className='fas fa-minus'></i>
+                    </div>
                     <div className='pp-details-inner active'>
                       <div className='pp-title'>
-                        <h2>{item.name}</h2>
+                        <h2>{porfolioArr[portofiloItem].name}</h2>
                         <p>
                           Category -
                           <span className='pp-project-category'>Web App</span>
@@ -77,25 +84,30 @@ export default function WebItem() {
                         <div className='row'>
                           <div className='description'>
                             <h3>Project brief: </h3>
-                            <p>{item.brief}</p>
+                            <p>{porfolioArr[portofiloItem].brief}</p>
                           </div>
                           <div className='info'>
                             <h3>Project info</h3>
                             <ul>
                               <li>
-                                Date - <span>{item.date}</span>
+                                Date -
+                                <span>{porfolioArr[portofiloItem].date}</span>
                               </li>
                               <li>
-                                Client - <span>{item.client}</span>
+                                Client -
+                                <span>{porfolioArr[portofiloItem].client}</span>
                               </li>
                               <li>
-                                Tools - <span>{item.tools}</span>
+                                Tools -
+                                <span>{porfolioArr[portofiloItem].tools}</span>
                               </li>
                               <li>
                                 Web -
                                 <span>
-                                  <a href={item.link} target='_blank'>
-                                    {item.link}
+                                  <a
+                                    href={porfolioArr[portofiloItem].link}
+                                    target='_blank'>
+                                    {porfolioArr[portofiloItem].link}
                                   </a>
                                 </span>
                               </li>
@@ -125,12 +137,13 @@ export default function WebItem() {
                       &times;
                     </div>
                     <img
-                      src={item.images[imgNumber]}
+                      src={porfolioArr[portofiloItem].images[imgNumber]}
                       alt='img'
                       className='pp-img outer-shadow'
                     />
                     <div className='pp-counter'>
-                      {imgNumber + 1} of {item.images.length}
+                      {imgNumber + 1} of{" "}
+                      {porfolioArr[portofiloItem].images.length}
                     </div>
                   </div>
                   <div className='pp-prev' onClick={prevImg}>

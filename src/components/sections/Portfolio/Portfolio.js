@@ -51,7 +51,7 @@ export default function Portfolio() {
       <div className='container'>
         <div className='row'>
           <div className='section-title'>
-            <h2 data-heading='portfolio'>Latest works</h2>
+            <h2 data-heading='portfolio'>Latest projects</h2>
           </div>
         </div>
         <div className='row'>
