@@ -14,48 +14,48 @@ export default function Portfolio() {
   const [games, setGames] = useState(false);
   const activeClass = "outer-shadow active";
 
-  const changeFilter = (e) => {
-    if (!e.target.classList.contains("active")) {
-      const target = e.target.getAttribute("data-target");
-      if (target === "all") {
-        setWebApp(false);
-        setFS(false);
-        setMobileApp(false);
-        setGames(false);
-      } else if (target === "web-application") {
-        setWebApp(true);
-        setFS(false);
-        setMobileApp(false);
-        setGames(false);
-      } else if (target === "fullstack") {
-        setWebApp(false);
-        setFS(true);
-        setMobileApp(false);
-        setGames(false);
-      } else if (target === "mobile-app") {
-        setWebApp(false);
-        setFS(false);
-        setMobileApp(true);
-        setGames(false);
-      } else if (target === "web-game") {
-        setWebApp(false);
-        setFS(false);
-        setMobileApp(false);
-        setGames(true);
-      }
-    }
-  };
+  // const changeFilter = (e) => {
+  //   if (!e.target.classList.contains("active")) {
+  //     const target = e.target.getAttribute("data-target");
+  //     if (target === "all") {
+  //       setWebApp(false);
+  //       setFS(false);
+  //       setMobileApp(false);
+  //       setGames(false);
+  //     } else if (target === "web-application") {
+  //       setWebApp(true);
+  //       setFS(false);
+  //       setMobileApp(false);
+  //       setGames(false);
+  //     } else if (target === "fullstack") {
+  //       setWebApp(false);
+  //       setFS(true);
+  //       setMobileApp(false);
+  //       setGames(false);
+  //     } else if (target === "mobile-app") {
+  //       setWebApp(false);
+  //       setFS(false);
+  //       setMobileApp(true);
+  //       setGames(false);
+  //     } else if (target === "web-game") {
+  //       setWebApp(false);
+  //       setFS(false);
+  //       setMobileApp(false);
+  //       setGames(true);
+  //     }
+  //   }
+  // };
 
   return (
-    <div className="porfolio-section section" id="projects">
-      <div className="container">
-        <div className="row">
-          <div className="section-title">
-            <h2 data-heading="portfolio">Latest works</h2>
+    <div className='porfolio-section section' id='projects'>
+      <div className='container'>
+        <div className='row'>
+          <div className='section-title'>
+            <h2 data-heading='portfolio'>Latest works</h2>
           </div>
         </div>
-        <div className="row">
-          <div className="portfolio-filter">
+        <div className='row'>
+          {/* <div className="portfolio-filter">
             <span
               className={`filter-item ${webApp && activeClass}`}
               data-target="web-application"
@@ -84,13 +84,13 @@ export default function Portfolio() {
             >
               Games
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
       {webApp && <WebItem />}
-      {fs && <FsItem />}
+      {/* {fs && <FsItem />}
       {mobileApp && <MaItem />}
-      {games && <GameItem />}
+      {games && <GameItem />} */}
     </div>
   );
 }

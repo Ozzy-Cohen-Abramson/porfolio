@@ -328,6 +328,10 @@
     width: 100vw;
   }
 
+  .about-section .about-tabs .tab-item {
+    font-size: 18px;
+  }
+
   .about-section .timeline {
     display: flex;
     align-items: center;

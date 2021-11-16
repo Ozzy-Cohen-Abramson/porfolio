@@ -1,19 +1,5 @@
-.portfolio-item-container {
-  position: relative;
-  /* background-color: var(--bg-black-50); */
-  margin: 0 35px;
-}
-
 .active {
   animation: fadeInTop 0.8s ease;
-}
-
-.porfolio-section .portfolio-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .porfolio-section .portfolio-item.active {
@@ -30,6 +16,7 @@
 .porfolio-section .portfolio-item-img img {
   border-radius: 5px;
   width: 100%;
+  height: 28vh;
   transition: all 0.3s ease;
 }
 
