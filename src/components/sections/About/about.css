@@ -370,9 +370,9 @@
   }
 
   .skills-row {
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    margin-left: 8vw;
+    /* display: grid;
+    grid-template-columns: 30vw 30vw 30vw; */
+    /* margin-left: 5vw; */
     width: 100%;
   }
 
@@ -382,10 +382,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40vw;
+    width: 25vw;
+    height: 25vw;
     grid-template-columns: auto auto auto;
     padding: 30px;
-    margin: 10px 5px;
+    margin: 10px;
     font-size: 70px;
     font-family: "devicon" !important;
     border: 1px solid var(--text-black-900);
