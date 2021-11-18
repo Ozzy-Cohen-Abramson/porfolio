@@ -17,8 +17,8 @@ export default function Services() {
               <div className='icon inner-shadow'>
                 <i className='fa fa-mobile-alt'></i>
               </div>
-              <h3>Responsive design</h3>
-              <p>Creating web pages that look good on all devices.</p>
+              <h3>Responsive Design</h3>
+              <p>Creating web pages that are compatible for all devices.</p>
             </div>
           </div>
           <div className='service-item'>
@@ -26,9 +26,9 @@ export default function Services() {
               <div className='icon inner-shadow'>
                 <i className='fa fa-laptop-code'></i>
               </div>
-              <h3>Web design</h3>
+              <h3>Web Design</h3>
               <p>
-                Building the website while thinking about the components it'll
+                Building the website while considering the components it will
                 contain.
               </p>
             </div>

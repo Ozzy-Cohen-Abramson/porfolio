@@ -24,7 +24,6 @@ export default function WebItem() {
   };
 
   const nextImg = () => {
-    console.log("next");
     if (imgNumber === 3) {
       setImageNumber(0);
     } else {
@@ -32,7 +31,6 @@ export default function WebItem() {
     }
   };
   const prevImg = () => {
-    console.log("prev");
     if (imgNumber === 0) {
       setImageNumber(3);
     } else {

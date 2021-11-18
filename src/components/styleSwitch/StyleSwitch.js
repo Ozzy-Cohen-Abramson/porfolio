@@ -92,7 +92,7 @@ export default function StyleSwitch() {
       </div>
       {switcherClass && (
         <div>
-          <h4>lightDark colors</h4>
+          <h4>Colors</h4>
           <div className='colors'>
             <span
               className='color-1'

@@ -10,14 +10,14 @@ export default function Experience() {
               <div className='timeline-item'>
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
-                  <span>October, 2021 - present</span>
-                  <h3>Full stack developer</h3>
+                  <span>October 2021 - present</span>
+                  <h3>Full Stack Developer</h3>
                   <h4>Fitback, Israel</h4>
                   <p>
-                    Developing real-time feedback workout for tracking user
-                    movements and exercise, using ML in Python / JS. I work both
-                    on the Fe and the Be as I write the funcitonallity for the
-                    exercises.
+                    Developing real-time workout feedback for tracking the
+                    user’s movements and exercises, using ML in Python / JS. I
+                    work both on the Front and Back End as I write the
+                    funcitonallity for the exercises.
                   </p>
                 </div>
               </div>

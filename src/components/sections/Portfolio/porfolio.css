@@ -70,6 +70,7 @@
 
   .projects-container {
     flex-direction: column;
+    width: 104vw;
   }
   .portfolio-item-container {
     margin-bottom: 28vh;

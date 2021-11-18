@@ -95,7 +95,7 @@ export default function Intro(props) {
                 </div>
 
                 <p>
-                  It is a period of code war. Full stack spaceships, striking
+                  It is a period of code wars. Full stack spaceships, striking
                   from a hidden base, have won their first victory against the
                   evil Bugs Empire.
                 </p>
@@ -104,13 +104,13 @@ export default function Intro(props) {
                 <p>
                   During the battle, FS spies managed to steal secret plans to
                   the Galactic Bug's ultimate weapon, the DEATH BUG, an armored
-                  algoritm with enough power to destroy the whole internet.
+                  algorithm with enough power to destroy the entire internet.
                 </p>
                 <br />
 
                 <p>
                   Pursued by the Bug Empire's sinister agents, Developer
-                  Ozzy-Wan Coffee races to the repossitory aboard his push
+                  Ozzy-Wan Coffee races to the repository aboard his push
                   commit, custodian of the stolen plans that can save his
                   website and restore freedom to the cyberspace...
                 </p>

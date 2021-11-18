@@ -53,7 +53,7 @@ export default function Contact() {
       id: 3,
       class: "map-marker-alt",
       type: "Adress",
-      contact: "Hadera, Israel",
+      contact: "Israel",
     },
   ];
 

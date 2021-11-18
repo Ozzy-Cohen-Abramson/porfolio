@@ -74,16 +74,16 @@ export default function About() {
           </div>
           <div className='about-info'>
             <p>
-              <span>Hey! My name is Ozzy and I'm fullstack developer.</span> A
-              year ago I fell in love with the world of coding. As I love
-              challenges, I try to push my self as far as I can for every day. I
-              also try to keep my mind open to new approaches to solve daily
-              problems.
+              <span>Hey! My name is Ozzy and I am a Full-Stack Developer.</span>
+              A year ago I fell in love with the world of coding. As I enjoy
+              challenges, I try to push my self as far as I can every day. I
+              also try to keep my mind open to new approaches to solve
+              day-to-day problems.
             </p>
             <p>
-              I think that the <span>most</span> special thing about being a
+              I think that the <span>most</span> unique aspect about being a
               developer is that I know that I can't stay put and the information
-              I've got today will never be sufficient.
+              I have today will never be sufficient.
             </p>
             <div className='about-buttons'>
               <a

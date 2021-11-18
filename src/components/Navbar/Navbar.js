@@ -66,7 +66,7 @@ export default function Navbar(props) {
               href='#contact'
               className='outer-shadow hover-in-shadow'
               onClick={closeNav}>
-              cantact
+              contact
             </a>
           </li>
         </ul>
