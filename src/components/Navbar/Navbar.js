@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./navbar.css";
 
@@ -23,7 +23,9 @@ export default function Navbar(props) {
           <li>
             <a
               href='#header'
-              className='inner-shadow active'
+              className={`outer-shadow hover-in-shadow ${
+                window.location.hash == "#header" && "active"
+              }`}
               onClick={closeNav}>
               home
             </a>
@@ -31,7 +33,9 @@ export default function Navbar(props) {
           <li>
             <a
               href='#about'
-              className='outer-shadow hover-in-shadow'
+              className={`outer-shadow hover-in-shadow ${
+                window.location.hash == "#about" && "active"
+              }`}
               onClick={closeNav}>
               about
             </a>
@@ -39,7 +43,9 @@ export default function Navbar(props) {
           <li>
             <a
               href='#services'
-              className='outer-shadow hover-in-shadow'
+              className={`outer-shadow hover-in-shadow ${
+                window.location.hash == "#services" && "active"
+              }`}
               onClick={closeNav}>
               services
             </a>
@@ -47,7 +53,9 @@ export default function Navbar(props) {
           <li>
             <a
               href='#projects'
-              className='outer-shadow hover-in-shadow'
+              className={`outer-shadow hover-in-shadow ${
+                window.location.hash == "#projects" && "active"
+              }`}
               onClick={closeNav}>
               portfolio
             </a>
@@ -64,7 +72,9 @@ export default function Navbar(props) {
           <li>
             <a
               href='#contact'
-              className='outer-shadow hover-in-shadow'
+              className={`outer-shadow hover-in-shadow ${
+                window.location.hash == "#contact" && "active"
+              }`}
               onClick={closeNav}>
               contact
             </a>
