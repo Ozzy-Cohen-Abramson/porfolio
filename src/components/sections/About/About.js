@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 import aboutImg from "../../../img/about.png";
-import CV from "../../../Oz_Cohen_Abramson.docx.pdf";
+import CV from "../../../Oz_Cohen_Abramson_CV.pdf";
 import Skills from "../../Skills/Skills";
 import Experience from "../../Experience/Experience";
 import Education from "../../Educetion/Education";

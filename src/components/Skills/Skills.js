@@ -53,15 +53,11 @@ export default function Skills() {
           <div className='skill-item outer-shadow'>
             <i className='devicon-mongodb-plain dev-icon'></i>
           </div>
-          <div className='skill-item outer-shadow'>
-            <i className='devicon-amazonwebservices-plain-wordmark dev-icon'></i>
-          </div>
+
           <div className='skill-item outer-shadow'>
             <i className='devicon-express-original-wordmark dev-icon'></i>
           </div>
-          <div className='skill-item outer-shadow'>
-            <i className='devicon-firebase-plain dev-icon'></i>
-          </div>
+
           <div className='skill-item outer-shadow'>
             <i className='devicon-jest-plain dev-icon'></i>
           </div>
@@ -93,6 +89,12 @@ export default function Skills() {
           </div>
           <div className='skill-item outer-shadow'>
             <i className='devicon-codepen-plain dev-icon'></i>
+          </div>
+          <div className='skill-item outer-shadow'>
+            <i className='devicon-firebase-plain dev-icon'></i>
+          </div>
+          <div className='skill-item outer-shadow'>
+            <i className='devicon-amazonwebservices-plain-wordmark dev-icon'></i>
           </div>
         </div>
       </div>

@@ -7,6 +7,20 @@ export default function Experience() {
         <div className='row'>
           <div className='timeline'>
             <div className='row'>
+              {/* <div className='timeline-item'>
+                <div className='timeline-item-inner outer-shadow'>
+                  <i className='fas fa-briefcase icon'></i>
+                  <span>December 2021</span>
+                  <h3>Python lecturer</h3>
+                  <h4>ITC, Israel</h4>
+                  <p>
+                    Developing real-time workout feedback for tracking the
+                    user’s movements and exercises, using ML in Python / JS. I
+                    work both on the Front and Back End as I write the
+                    funcitonallity for the exercises.
+                  </p>
+                </div>
+              </div> */}
               <div className='timeline-item'>
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
