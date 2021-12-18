@@ -10,30 +10,34 @@ export default function Contact() {
   const [message, setMessage] = useState("");
 
   const HandleSubmit = (e) => {
-    e.preventDefault();
-    // console.log(name, email, subject, message);
-    e.preventDefault();
+    if (name && email && subject && message) {
+      e.preventDefault();
+      // console.log(name, email, subject, message);
+      e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_s2nh3aj",
-        "template_4rh3dls",
-        e.target,
-        "user_LVQqi60QiKbKQIqVDRwS3"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Thank you!! I'll get back to you as soon as possible.");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
+      emailjs
+        .sendForm(
+          "service_s2nh3aj",
+          "template_4rh3dls",
+          e.target,
+          "user_LVQqi60QiKbKQIqVDRwS3"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Thank you!! I'll get back to you as soon as possible.");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    } else {
+      alert("Please fill all fields!");
+    }
   };
 
   const contactArr = [
@@ -137,7 +141,8 @@ export default function Contact() {
                 <div className='submit-btn'>
                   <button
                     type='submit'
-                    className='btn-1 outer-shadow hover-in-shadow'>
+                    className='btn-1 outer-shadow hover-in-shadow'
+                    disabled={!name && !email && !subject && !message}>
                     Send message
                   </button>
                 </div>

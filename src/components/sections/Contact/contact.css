@@ -91,6 +91,11 @@
   padding: 0 15px;
 }
 
+.submit-btn .btn-1:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
 @media only screen and (max-width: 1000px) {
   .contact-row {
     display: flex;
