@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.d2994819.chunk.css",
-    "main.js": "./static/js/main.1feffcdf.chunk.js",
-    "main.js.map": "./static/js/main.1feffcdf.chunk.js.map",
+    "main.css": "./static/css/main.c37cf96f.chunk.css",
+    "main.js": "./static/js/main.b6b5deb8.chunk.js",
+    "main.js.map": "./static/js/main.b6b5deb8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.4740fce0.js",
     "runtime-main.js.map": "./static/js/runtime-main.4740fce0.js.map",
     "static/js/2.9a34671b.chunk.js": "./static/js/2.9a34671b.chunk.js",
@@ -10,9 +10,9 @@
     "static/js/3.0fc1e059.chunk.js": "./static/js/3.0fc1e059.chunk.js",
     "static/js/3.0fc1e059.chunk.js.map": "./static/js/3.0fc1e059.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.d2994819.chunk.css.map": "./static/css/main.d2994819.chunk.css.map",
+    "static/css/main.c37cf96f.chunk.css.map": "./static/css/main.c37cf96f.chunk.css.map",
     "static/js/2.9a34671b.chunk.js.LICENSE.txt": "./static/js/2.9a34671b.chunk.js.LICENSE.txt",
-    "static/media/Oz_Cohen_Abramson_CV.d91bd4c4.pdf": "./static/media/Oz_Cohen_Abramson_CV.d91bd4c4.pdf",
+    "static/media/Oz_Cohen_Abramson_CV.f68913f3.pdf": "./static/media/Oz_Cohen_Abramson_CV.f68913f3.pdf",
     "static/media/SWName.47d2baff.png": "./static/media/SWName.47d2baff.png",
     "static/media/StarWarsIntro.1e0b242f.mp3": "./static/media/StarWarsIntro.1e0b242f.mp3",
     "static/media/StarWarsIntro.b8f6b09f.ogg": "./static/media/StarWarsIntro.b8f6b09f.ogg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.4740fce0.js",
     "static/js/2.9a34671b.chunk.js",
-    "static/css/main.d2994819.chunk.css",
-    "static/js/main.1feffcdf.chunk.js"
+    "static/css/main.c37cf96f.chunk.css",
+    "static/js/main.b6b5deb8.chunk.js"
   ]
 }

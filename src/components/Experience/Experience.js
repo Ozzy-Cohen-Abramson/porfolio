@@ -7,7 +7,7 @@ export default function Experience() {
         <div className='row'>
           <div className='timeline'>
             <div className='row'>
-              {/* <div className='timeline-item'>
+              <div className='timeline-item'>
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
                   <span>December 2021</span>
@@ -20,11 +20,11 @@ export default function Experience() {
                     funcitonallity for the exercises.
                   </p>
                 </div>
-              </div> */}
+              </div>
               <div className='timeline-item'>
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
-                  <span>October 2021 - present</span>
+                  <span>October 2021 - December 2021</span>
                   <h3>Full Stack Developer</h3>
                   <h4>Fitback, Israel</h4>
                   <p>
