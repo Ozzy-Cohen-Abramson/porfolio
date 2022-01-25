@@ -10,7 +10,6 @@ export default function WebItem() {
   const [portofiloItem, setPortfolioItem] = useState();
 
   const showDetailesFunc = (e) => {
-    console.log(porfolioArr[e.target.id]);
     setPortfolioItem(e.target.id);
     showDetailes(!details);
   };
@@ -30,6 +29,7 @@ export default function WebItem() {
       setImageNumber(imgNumber + 1);
     }
   };
+
   const prevImg = () => {
     if (imgNumber === 0) {
       setImageNumber(3);
