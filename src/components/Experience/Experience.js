@@ -10,6 +10,44 @@ export default function Experience() {
               <div className='timeline-item'>
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
+                  <span>February 2022 - Present</span>
+                  <h3>Software associate engineer</h3>
+                  <h4>Synamedia, Israel</h4>
+                  <p>
+                    Working with Python and node.js (express, nest) in backend
+                    to build micro-services components. <br /> React in the
+                    frontend side,
+                  </p>
+                </div>
+              </div>
+              <div className='timeline-item'>
+                <div className='timeline-item-inner outer-shadow'>
+                  <i className='fas fa-briefcase icon'></i>
+                  <span>January 2023</span>
+                  <h3>Python lecturer</h3>
+                  <h4>ITC, Israel</h4>
+                  <p>
+                    Teaching the basics of Python in pre-course for Data
+                    science.
+                  </p>
+                </div>
+              </div>
+              <div className='timeline-item'>
+                <div className='timeline-item-inner outer-shadow'>
+                  <i className='fas fa-briefcase icon'></i>
+                  <span>January 2023</span>
+                  <h3>Frontend lecturer</h3>
+                  <h4>ITC, Israel</h4>
+                  <p>
+                    Introducing the frontend side of fullstack development to
+                    students in fullstack course. Teaching HTML, CSS and
+                    Javascript as well as React.js
+                  </p>
+                </div>
+              </div>
+              <div className='timeline-item'>
+                <div className='timeline-item-inner outer-shadow'>
+                  <i className='fas fa-briefcase icon'></i>
                   <span>December 2021</span>
                   <h3>Python lecturer</h3>
                   <h4>ITC, Israel</h4>
@@ -34,38 +72,6 @@ export default function Experience() {
                   </p>
                 </div>
               </div>
-
-              {/*<div className="timeline-item">
-                <div className="timeline-item-inner outer-shadow">
-                  <i className="fas fa-briefcase icon"></i>
-                  <span>Date</span>
-                  <h3>Another wowrk Dexcription</h3>
-                  <h4>Company name, Israel</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia quidem ipsa et inventore, vel harum, deleniti,
-                    eveniet sunt perferendis ab earum! Laudantium totam saepe,
-                    atque necessitatibus velit illum maiores quam. ipsum dolor
-                    sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              </div>
-
-               <div className="timeline-item">
-                <div className="timeline-item-inner outer-shadow">
-                  <i className="fas fa-briefcase icon"></i>
-                  <span>Date</span>
-                  <h3>Another wowrk Dexcription</h3>
-                  <h4>Company name, Israel</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia quidem ipsa et inventore, vel harum, deleniti,
-                    eveniet sunt perferendis ab earum! Laudantium totam saepe,
-                    atque necessitatibus velit illum maiores quam. ipsum dolor
-                    sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
