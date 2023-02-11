@@ -16,19 +16,22 @@ export default function Experience() {
                   <p>
                     Working with Python and node.js (express, nest) in backend
                     to build micro-services components. <br /> React in the
-                    frontend side,
+                    frontend side. <br />
+                    Working with Docker, AWS and github actions for deployment.
                   </p>
                 </div>
               </div>
               <div className='timeline-item'>
                 <div className='timeline-item-inner outer-shadow'>
                   <i className='fas fa-briefcase icon'></i>
-                  <span>January 2023</span>
-                  <h3>Python lecturer</h3>
+                  <span>January 2023 - present</span>
+                  <h3>Lecturer</h3>
                   <h4>ITC, Israel</h4>
                   <p>
-                    Teaching the basics of Python in pre-course for Data
-                    science.
+                    Introducing the world of Python to Cyber Security and Data
+                    Analyst students. <br /> Teaching the fundamentals of
+                    Front-end development in Full-stack programs (HTML, CSS and
+                    JS Basics).
                   </p>
                 </div>
               </div>

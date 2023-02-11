@@ -67,6 +67,9 @@ export default function Skills() {
         </div>
         <div className='row skills-row'>
           <div className='skill-item outer-shadow'>
+            <i className='devicon-docker-plain dev-icon '></i>
+          </div>
+          <div className='skill-item outer-shadow'>
             <i className='devicon-git-plain dev-icon '></i>
           </div>
           <div className='skill-item outer-shadow'>
