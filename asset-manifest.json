@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/porfolio/static/css/main.b3ee5119.chunk.css",
-    "main.js": "/porfolio/static/js/main.ed683140.chunk.js",
-    "main.js.map": "/porfolio/static/js/main.ed683140.chunk.js.map",
+    "main.js": "/porfolio/static/js/main.be47be2d.chunk.js",
+    "main.js.map": "/porfolio/static/js/main.be47be2d.chunk.js.map",
     "runtime-main.js": "/porfolio/static/js/runtime-main.3fba70e1.js",
     "runtime-main.js.map": "/porfolio/static/js/runtime-main.3fba70e1.js.map",
     "static/js/2.4c212fbf.chunk.js": "/porfolio/static/js/2.4c212fbf.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/porfolio/index.html",
     "static/css/main.b3ee5119.chunk.css.map": "/porfolio/static/css/main.b3ee5119.chunk.css.map",
     "static/js/2.4c212fbf.chunk.js.LICENSE.txt": "/porfolio/static/js/2.4c212fbf.chunk.js.LICENSE.txt",
-    "static/media/Oz_Cohen_Abramson_CV.0f6ca970.pdf": "/porfolio/static/media/Oz_Cohen_Abramson_CV.0f6ca970.pdf",
+    "static/media/Oz_Cohen_Abramson_CV.5abf18ab.pdf": "/porfolio/static/media/Oz_Cohen_Abramson_CV.5abf18ab.pdf",
     "static/media/SWName.47d2baff.png": "/porfolio/static/media/SWName.47d2baff.png",
     "static/media/StarWarsIntro.1e0b242f.mp3": "/porfolio/static/media/StarWarsIntro.1e0b242f.mp3",
     "static/media/StarWarsIntro.b8f6b09f.ogg": "/porfolio/static/media/StarWarsIntro.b8f6b09f.ogg",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.3fba70e1.js",
     "static/js/2.4c212fbf.chunk.js",
     "static/css/main.b3ee5119.chunk.css",
-    "static/js/main.ed683140.chunk.js"
+    "static/js/main.be47be2d.chunk.js"
   ]
 }
