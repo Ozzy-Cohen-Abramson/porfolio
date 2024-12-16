@@ -75,10 +75,10 @@ export default function About() {
           <div className='about-info'>
             <p>
               <span>Hey! My name is Ozzy and I am a Full-Stack Developer.</span>
-              A year ago I fell in love with the world of coding. As I enjoy
+              3 Years ago I fell in love with the world of coding. As I enjoy
               challenges, I try to push my self as far as I can every day. I
-              also try to keep my mind open to new approaches to solve
-              day-to-day problems.
+              also keep my mind open to new approaches to solve day-to-day
+              problems.
             </p>
             <p>
               I think that the <span>most</span> unique aspect about being a

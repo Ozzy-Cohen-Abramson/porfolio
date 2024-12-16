@@ -15,7 +15,7 @@ const porfolioArr = [
     ],
   },
   {
-    name: "AI hand movement mouse",
+    name: "hand movement mouse",
     date: "2021",
     client: "Just for myself",
     tools: "Python, MediaPipe, opencv, autopy",
