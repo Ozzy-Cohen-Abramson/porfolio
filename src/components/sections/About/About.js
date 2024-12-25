@@ -65,7 +65,7 @@ export default function About() {
                 <i className='fab fa-github'></i>
               </a>
               <a
-                href='https://www.linkedin.com/in/ozzy-cohen-abramson-232304209/'
+                href='https://www.linkedin.com/in/ozzy-cohen-abramson-%F0%9F%8E%97%EF%B8%8F-232304209/'
                 target='_blank'
                 className='outer-shadow hover-in-shadow linked'>
                 <i className='fab fa-linkedin-in '></i>
